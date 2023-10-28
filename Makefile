@@ -1,4 +1,4 @@
-PHONY: build restore
+.PHONY: build restore
 
 venv: 
 	cd $$HOME && python3 -m venv venv
