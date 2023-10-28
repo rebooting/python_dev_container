@@ -6,7 +6,7 @@ from unittest.mock import patch
 import sys
 sys.path.append("../")
 
-from libSample import sample
+from libsample import sample
 
 class TestSample(unittest.TestCase):
     def test_sample(self):

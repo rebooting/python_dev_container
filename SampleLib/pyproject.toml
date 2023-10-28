@@ -11,11 +11,11 @@ classifiers = [
 requires-python = ">=3.8"
 
 [tool.poetry]
-name = "SampleLib"
+name = "libsample"
 version = "0.1.0"
 description = "A sample library"
-authors = ["example <user.example@example.org"]
-include = ["libSample", "libSample/*"]
+authors = ["example <user.example@example.org>"]
+include = ["libsample"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

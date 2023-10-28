@@ -10,4 +10,10 @@ capture-requirements:
 	. $$HOME/venv/bin/activate && pip freeze > requirements.txt
 
 test_sample:
-	. $$HOME/venv/bin/activate && cd SampleLib/test && python -m unittest test_sample.py
+	. $$HOME/venv/bin/activate && cd SampleLib && python -m unittest test.test_sample
+
+build_sample:
+	. $$HOME/venv/bin/activate && cd SampleLib && python -m build --wheel
+
+install_sample:
+	. $$HOME/venv/bin/activate && cd SampleLib && python -m pip install dist/*.whl
