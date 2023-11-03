@@ -21,9 +21,7 @@
         }
 		,
 	// mount ssh keys
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/home/${containerEnv:USER}/.ssh,type=bind,consistency=cached"
-	],
+	"mounts": ["source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind" ],
 	// podman specific
 	"runArgs": ["--userns=keep-id"],
 
